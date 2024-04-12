@@ -1,8 +1,21 @@
 {
   "version": 2,
-  "dgSpecHash": "gwPK8df58xDpDuAqDsM7z28//PHNcHvz1BK+Is5SWDmZzSFTSIlOZmGhLx8rLO3PXBFKYsYu53zGNDM+T5aK7A==",
+  "dgSpecHash": "osESGokZccFQWCgd2wBRw0z8Gzx3AK5UA7mKPqyBBHmJUk9vzqC189ZLInal6CZCblfUBdikfsIxdbLVn8mcUA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\lizak\\Source\\Repos\\RocketProject\\Code\\Code\\Code.csproj",
-  "expectedPackageFiles": [],
-  "logs": []
+  "projectFilePath": "C:\\Users\\lizak\\source\\repos\\RocketProject\\Code\\Code\\Code.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\lizak\\.nuget\\packages\\helixtoolkit.wpf\\2.25.0\\helixtoolkit.wpf.2.25.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'HelixToolkit.Wpf 2.25.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net5.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "HelixToolkit.Wpf",
+      "targetGraphs": [
+        "net5.0-windows7.0"
+      ]
+    }
+  ]
 }

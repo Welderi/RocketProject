@@ -20,3 +20,5 @@ C:\Users\lizak\Source\Repos\RocketProject\Code\Code\obj\Debug\net5.0-windows\Cod
 C:\Users\lizak\Source\Repos\RocketProject\Code\Code\obj\Debug\net5.0-windows\ref\Code.dll
 C:\Users\lizak\Source\Repos\RocketProject\Code\Code\obj\Debug\net5.0-windows\Code.pdb
 C:\Users\lizak\Source\Repos\RocketProject\Code\Code\obj\Debug\net5.0-windows\Code.genruntimeconfig.cache
+C:\Users\lizak\source\repos\RocketProject\Code\Code\bin\Debug\net5.0-windows\HelixToolkit.Wpf.dll
+C:\Users\lizak\source\repos\RocketProject\Code\Code\obj\Debug\net5.0-windows\Code.csproj.CopyComplete

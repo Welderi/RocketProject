@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lizak\\Source\\Repos\\RocketProject\\Code\\Code\\Code.csproj": {}
+    "C:\\Users\\lizak\\source\\repos\\RocketProject\\Code\\Code\\Code.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lizak\\Source\\Repos\\RocketProject\\Code\\Code\\Code.csproj": {
+    "C:\\Users\\lizak\\source\\repos\\RocketProject\\Code\\Code\\Code.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lizak\\Source\\Repos\\RocketProject\\Code\\Code\\Code.csproj",
+        "projectUniqueName": "C:\\Users\\lizak\\source\\repos\\RocketProject\\Code\\Code\\Code.csproj",
         "projectName": "Code",
-        "projectPath": "C:\\Users\\lizak\\Source\\Repos\\RocketProject\\Code\\Code\\Code.csproj",
+        "projectPath": "C:\\Users\\lizak\\source\\repos\\RocketProject\\Code\\Code\\Code.csproj",
         "packagesPath": "C:\\Users\\lizak\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lizak\\Source\\Repos\\RocketProject\\Code\\Code\\obj\\",
+        "outputPath": "C:\\Users\\lizak\\source\\repos\\RocketProject\\Code\\Code\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\lizak\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +39,12 @@
       "frameworks": {
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
+          "dependencies": {
+            "HelixToolkit.Wpf": {
+              "target": "Package",
+              "version": "[2.25.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
