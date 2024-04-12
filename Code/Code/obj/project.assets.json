@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lizak\\source\\repos\\RocketProject1\\Code\\Code\\Code.csproj",
+      "projectUniqueName": "C:\\Users\\lizak\\Source\\Repos\\RocketProject\\Code\\Code\\Code.csproj",
       "projectName": "Code",
-      "projectPath": "C:\\Users\\lizak\\source\\repos\\RocketProject1\\Code\\Code\\Code.csproj",
+      "projectPath": "C:\\Users\\lizak\\Source\\Repos\\RocketProject\\Code\\Code\\Code.csproj",
       "packagesPath": "C:\\Users\\lizak\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lizak\\source\\repos\\RocketProject1\\Code\\Code\\obj\\",
+      "outputPath": "C:\\Users\\lizak\\Source\\Repos\\RocketProject\\Code\\Code\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\lizak\\AppData\\Roaming\\NuGet\\NuGet.Config",

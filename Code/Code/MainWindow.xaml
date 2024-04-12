@@ -7,6 +7,30 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
 
+        <Grid Grid.Row="0" Grid.Column="0" Background="LightCyan">
+            <Label Content="State" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        </Grid>
+
+        <Grid Grid.Row="0" Grid.Column="1" Background="LightCoral">
+            <ListBox>
+                <ListBoxItem>Info1</ListBoxItem>
+                <ListBoxItem>Info2</ListBoxItem>
+            </ListBox>
+        </Grid>
+
+        <Grid Grid.Row="1" Grid.Column="0" Background="LightGreen">
+        </Grid>
+
+        <Grid Grid.Row="1" Grid.Column="1" Background="LightYellow">
+        </Grid>
     </Grid>
 </Window>
