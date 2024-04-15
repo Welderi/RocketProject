@@ -1,0 +1,69 @@
+Handling data: Rocket ==> GS  
+	**** Данні будуть посилатися пакетами по 8 байт. ****
+	- Пакет починається з ідентифікатора початку пакету: $                     			| 1st byte
+	- Кожний пакет посилає данні опридільонного типу.
+		Тип оприділяєтья за допомогоє байта-індентифікатора: MessageToSendType 			| 2nd byte
+	- Данні: 4 байти(INT type) з основною інформацією.                         
+		У випадку посилання пакета з індентифікаторм status('0x20'):
+			кожний із байтів в INT несе свою інформацію, так:
+				Перший байт: statusByte - статус ракети                      			| 3rd byte
+				Другий байт: alarmByte - попереждення, у випадку якшо шось не ок 		| 4rd byte
+				Третій байт: stateMachineState - крок ставової машини 					| 5rd byte
+				Четвертий байт: reserved - резервовано під можливі подальші потреби		| 6rd byte
+	- Live Byte																			| 7rd byte
+	- Кожний пакет закінчується кінцевим знаком: *                                    | 8rd byte
+	
+	Таким чином пакет виглядає так(плюси - для розуміння. їх не враховувати):
+				[$  +   MessageToSendType + Data  + liveByte  +  *]
+		Size:   |1byte||      1byte      | |4bytes| |1byte|	|1byte|  	
+
+
+	**** Опис байта-індентифікатора: MessageToSendType ****	
+	Gyroscope+Acceleration:						Data Size:
+		temperature	(MessageToSendType: '0x11')	DataCase: 4_Byte(Python:Int)
+		xAccel		(MessageToSendType: '0x12')	DataCase: 4_Byte(Python:Int)
+		yAccel		(MessageToSendType: '0x13')	DataCase: 4_Byte(Python:Int)
+		zAccel		(MessageToSendType: '0x14')	DataCase: 4_Byte(Python:Int)
+		xGyro		(MessageToSendType: '0x15')	DataCase: 4_Byte(Python:Int)
+		yGyro		(MessageToSendType: '0x16')	DataCase: 4_Byte(Python:Int)
+		zGyro		(MessageToSendType: '0x17')	DataCase: 4_Byte(Python:Int)
+	Barometr:
+		temperature	(MessageToSendType: '0x18')	DataCase: 4_Byte(Python:Int)
+		pressure	(MessageToSendType: '0x19')	DataCase: 4_Byte(Python:Int)
+		humidity	(MessageToSendType: '0x1A')	DataCase: 4_Byte(Python:Int)
+	Rocket status data:
+		status      (MessageToSendType: '0x20')  DataCase: 4_Byte(Python:Int SEPARATED)
+														1st_Byte: statusByte
+														2nd_Byte: alarmByte
+														3rd_Byte: errorByte
+														4th-Byte: stateByte
+
+
+Handling data: GS ==> Rocket
+	**** Данні будуть прийматися пакетами по 4 байт. ****
+	- Пакет починається з ідентифікатора початку пакету: $                     			| 1st byte
+	- Кожний пакет несе данні двох типів:
+		Команд - байт: команди для ракети від GUI 										| 2nd byte
+	- Live Byte                    														| 3rd byte																		| 7rd byte
+	- Кожний пакет закінчується кінцевим знаком: *                                      | 4rd byte
+	
+	Таким чином пакет виглядає так(плюси - для розуміння. їх не враховувати):
+				[$  +   comandByte  +  liveByteAck + *]
+		Size:	|1byte||  1byte   |    |1bytes|   |1byte|
+		
+		
+	**** Опис байт-команди: comandByte ****	TODO - подумати
+													Data Size:
+		1.INIT_Ack  (comandByte: '0x51')			1_Byte(Python:Int)
+		2.ManulDrop (comandByte: '0x52')			1_Byte(Python:Int)
+		3.Command3	(comandByte: '0x53')			1_Byte(Python:Int)
+		4.Command4	(comandByte: '0x54')			1_Byte(Python:Int)
+		5.Command5	(comandByte: '0x55')			1_Byte(Python:Int)
+		6.Command6	(comandByte: '0x56')			1_Byte(Python:Int)
+		7.Command7	(comandByte: '0x57')			1_Byte(Python:Int)
+		8.Command8	(comandByte: '0x58')			1_Byte(Python:Int)
+	
+	
+	
+	
+	
