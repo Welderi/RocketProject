@@ -1,0 +1,1 @@
+Template for rocket structure and materials detailed description
