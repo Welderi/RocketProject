@@ -13,7 +13,7 @@ G_CONST_STATE203_ERROR3 = 203  # Error 3 Executing State
 G_CONST_STATE204_ERROR4 = 204  # Error 4 Executing State
 G_CONST_TRUE = True
 G_CONST_FALSE = False
-G_LIVEBYTE = 0b_0101_0101
+G_LIVEBYTE = 85
 
 
 

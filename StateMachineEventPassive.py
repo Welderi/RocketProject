@@ -1,10 +1,10 @@
 
 class StateMachineSimply:
     def __init__(self, initialState):
-        self._lastState: int = -1
-        self._currentState: int = initialState
-        self._nextState: int = initialState
-        self._traceStateNumber: int = 0
+        self._lastState = -1
+        self._currentState = initialState
+        self._nextState = initialState
+        self._traceStateNumber = 0
         self._traceArrLen = 100
         self._traceArray = bytearray(self._traceArrLen)
 

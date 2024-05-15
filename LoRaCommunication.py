@@ -1,10 +1,11 @@
 from enum import Enum
 from globalData import *
+import os
 import time
 from pyLora import LoRa
 
 
-def ByteFromInt(byteNum=0, intVal:int =0):
+def ByteFromInt(byteNum=0, intVal: int=0):
     if byteNum == 0:
         return intVal & 0xFF
     elif byteNum == 1:
@@ -17,8 +18,8 @@ def ByteFromInt(byteNum=0, intVal:int =0):
         return None
 
 
-def Byte2Bytearray(byteArr:bytearray, byteNum:int=0, byteVal:int=0):
-    if byteArr == bytearray and byteNum <= len(bytearray):
+def Byte2Bytearray(byteArr: bytearray, byteNum: int=0, byteVal: int=0):
+    if isinstance(byteArr, bytearray) and byteNum < len(byteArr):
         byteArr[byteNum] = byteVal & 0xFF
         return True
     return False
@@ -88,9 +89,16 @@ class LoRaInstance:
         self.lora = LoRa(0, 17, 1)
         self.lora.set_frequency(433000000)
 
-        self._buffer: bytearray = bytearray(4)
-        self._bufferCurrentPos: int = 0
-        self._dataToSend: bytearray = bytearray(8)
+        self._buffer = bytearray(4)
+        self._bufferCurrentPos = 0
+        self._dataToSend = bytearray(8)
+
+    def write_to_file(self, data):
+        try:
+            with open("output.txt", "a") as file:
+                file.write(data + "\n")
+        except Exception as e:
+            print(f"{e}")
 
     def SendData(self, packet: bytearray):
         self._dataToSend = packet
@@ -109,12 +117,15 @@ class LoRaInstance:
                 data_byte = self.lora.read_payload()[0]
                 self._buffer[self._bufferCurrentPos] = data_byte
                 self._bufferCurrentPos += 1
-                if self._bufferCurrentPos == len(self._buffer):  # Если буфер заполнен
-                    return  # Выходим из цикла ожидания
+                if self._bufferCurrentPos == len(self._buffer):
+                    data_str = ''.join(format(x, '02x') for x in self._buffer)
+                    write_to_file(data_str) 
+                    self._bufferCurrentPos = 0
+                    return
             time.sleep(0.1)
 
     def _ValidateReceivedData(self):
-        return (self._buffer[0] == 0b00100100) & (self._buffer[-1] == 0b00101010)
+        return (self._buffer[0] == 36) & (self._buffer[-1] == 42)
 
     def GetReceivedData(self):
         if self._ValidateReceivedData():
@@ -124,11 +135,11 @@ class LoRaInstance:
 
 class MessageToSendFormater:
     def __init__(self, messageType: MessageToSendType, dataToSend: int):
-        self._startSymbol = 0b_0010_0100  # $
-        self._messageType: MessageToSendType = messageType
-        self._data: int = dataToSend
+        self._startSymbol = 36  # $
+        self._messageType = messageType
+        self._data = dataToSend
         self._liveByte = None
-        self._endSymbol = 0b_0010_1010  # *
+        self._endSymbol = 42  # *
 
         self._message = bytearray(8)
 
@@ -136,7 +147,7 @@ class MessageToSendFormater:
 
     def _MessageFormating(self):
         self._message[0] = self._startSymbol
-        self._message[1] = ByteFromInt(0, self._messageType)
+        self._message[1] = ByteFromInt(0, self._messageType.value)
         self._message[2] = ByteFromInt(0, self._data)
         self._message[3] = ByteFromInt(1, self._data)
         self._message[4] = ByteFromInt(2, self._data)
@@ -152,11 +163,5 @@ class ReceivedMessageHandler:
     def __init__(self, rawMessage: bytearray):
         self._raw = rawMessage
 
-    def GetCommandNum(self):
-        commandNum = self._raw[1]
-        if commandNum not in Command.__members__.values():
-            raise ValueError(f"Invalid command value: {commandNum}")
-        return Command(commandNum)
-
-    def GetLiveByte(self):
-        return self._raw[2]
+    def Get(self):
+        pass

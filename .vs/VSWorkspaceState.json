@@ -1,7 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Avionics\\Groundstation",
+    "\\Avionics\\Groundstation\\T-CAS_py\\sounds",
+    "\\Code\\Code",
+    "\\Structures"
   ],
-  "SelectedNode": "\\Code.sln",
+  "SelectedNode": "\\main2.py",
   "PreviewInSolutionExplorer": false
 }

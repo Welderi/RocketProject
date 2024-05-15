@@ -1,8 +1,8 @@
 class AccelerometerInstance:
     def __init__(self, rx):
-        self.xAccel: int = -1
-        self.yAccel: int = -1
-        self.zAccel: int = -1
+        self.xAccel = -1
+        self.yAccel = -1
+        self.zAccel = -1
 
     def _Handling(self):
         pass
@@ -18,9 +18,9 @@ class AccelerometerInstance:
 
 class GyroscopeInstance:
     def __init__(self, rx):
-        self.xGyro: int = -1
-        self.yGyro: int = -1
-        self.zGyro: int = -1
+        self.xGyro = -1
+        self.yGyro = -1
+        self.zGyro = -1
 
     def _Handling(self):
         pass

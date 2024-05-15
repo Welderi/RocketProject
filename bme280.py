@@ -1,8 +1,8 @@
 class BarometerInstance:
     def __init__(self, rx):
-        self._temperature: int = -1
-        self._pressure: int = -1
-        self._humidity: int = -1
+        self._temperature = -1
+        self._pressure = -1
+        self._humidity = -1
 
     def _Handling(self):
         pass

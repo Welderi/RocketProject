@@ -1,3 +1,4 @@
+from asyncio import run
 from StateMachineEventPassive import *
 from globalData import *
 from LoRaCommunication import *
@@ -192,16 +193,13 @@ def cycleLoop():
         # Action:
         smAction(sm)
 
-        # **************  Output Handling   **************
+        # **************  Output Handling   **************  
 
         # Clearing:
         del(inputHandler)
 def main():
-
-
-
     cycleLoop()
 
 
 if __name__ == "__main__":
-    asyncio.run(main())
+    run(main())
