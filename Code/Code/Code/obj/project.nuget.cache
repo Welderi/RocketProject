@@ -1,0 +1,33 @@
+{
+  "version": 2,
+  "dgSpecHash": "jNbWBKhG+qFDQ4MXXNboKQiE23BjcFHXoG43PdrxGenuffhvVwUN3seVrbGthE60LvkpnIonXM8mNzp+QnPfpg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\lizak\\source\\repos\\RocketProject1\\Code\\Code\\Code\\Code.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\lizak\\.nuget\\packages\\fparsec\\2.0.0-beta2\\fparsec.2.0.0-beta2.nupkg.sha512",
+    "C:\\Users\\lizak\\.nuget\\packages\\fsharp.core\\8.0.100\\fsharp.core.8.0.100.nupkg.sha512",
+    "C:\\Users\\lizak\\.nuget\\packages\\helixtoolkit\\2.25.0\\helixtoolkit.2.25.0.nupkg.sha512",
+    "C:\\Users\\lizak\\.nuget\\packages\\helixtoolkit.wpf\\2.25.0\\helixtoolkit.wpf.2.25.0.nupkg.sha512",
+    "C:\\Users\\lizak\\.nuget\\packages\\mathnet.numerics\\6.0.0-beta1\\mathnet.numerics.6.0.0-beta1.nupkg.sha512",
+    "C:\\Users\\lizak\\.nuget\\packages\\mathnet.numerics.fsharp\\6.0.0-beta1\\mathnet.numerics.fsharp.6.0.0-beta1.nupkg.sha512",
+    "C:\\Users\\lizak\\.nuget\\packages\\mathnet.symbolics\\0.25.0\\mathnet.symbolics.0.25.0.nupkg.sha512",
+    "C:\\Users\\lizak\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\lizak\\.nuget\\packages\\oxyplot.core\\2.1.2\\oxyplot.core.2.1.2.nupkg.sha512",
+    "C:\\Users\\lizak\\.nuget\\packages\\oxyplot.wpf\\2.1.2\\oxyplot.wpf.2.1.2.nupkg.sha512",
+    "C:\\Users\\lizak\\.nuget\\packages\\oxyplot.wpf.shared\\2.1.2\\oxyplot.wpf.shared.2.1.2.nupkg.sha512",
+    "C:\\Users\\lizak\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
+    "C:\\Users\\lizak\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'HelixToolkit.Wpf 2.25.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net5.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "HelixToolkit.Wpf",
+      "targetGraphs": [
+        "net5.0-windows7.0"
+      ]
+    }
+  ]
+}

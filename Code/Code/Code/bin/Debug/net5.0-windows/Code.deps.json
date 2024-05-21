@@ -1,0 +1,282 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "Code/1.0.0": {
+        "dependencies": {
+          "HelixToolkit": "2.25.0",
+          "HelixToolkit.Wpf": "2.25.0",
+          "MathNet.Symbolics": "0.25.0",
+          "OxyPlot.Wpf": "2.1.2"
+        },
+        "runtime": {
+          "Code.dll": {}
+        }
+      },
+      "FParsec/2.0.0-beta2": {
+        "dependencies": {
+          "FSharp.Core": "8.0.100"
+        },
+        "runtime": {
+          "lib/netstandard2.1/FParsec.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          },
+          "lib/netstandard2.1/FParsecCS.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          }
+        }
+      },
+      "FSharp.Core/8.0.100": {
+        "runtime": {
+          "lib/netstandard2.1/FSharp.Core.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.1.23.52306"
+          }
+        },
+        "resources": {
+          "lib/netstandard2.1/cs/FSharp.Core.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/netstandard2.1/de/FSharp.Core.resources.dll": {
+            "locale": "de"
+          },
+          "lib/netstandard2.1/es/FSharp.Core.resources.dll": {
+            "locale": "es"
+          },
+          "lib/netstandard2.1/fr/FSharp.Core.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/netstandard2.1/it/FSharp.Core.resources.dll": {
+            "locale": "it"
+          },
+          "lib/netstandard2.1/ja/FSharp.Core.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/netstandard2.1/ko/FSharp.Core.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/netstandard2.1/pl/FSharp.Core.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/netstandard2.1/pt-BR/FSharp.Core.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/netstandard2.1/ru/FSharp.Core.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/netstandard2.1/tr/FSharp.Core.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/netstandard2.1/zh-Hans/FSharp.Core.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/netstandard2.1/zh-Hant/FSharp.Core.resources.dll": {
+            "locale": "zh-Hant"
+          }
+        }
+      },
+      "HelixToolkit/2.25.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Abstractions": "6.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/HelixToolkit.dll": {
+            "assemblyVersion": "2.25.0.0",
+            "fileVersion": "2.25.0.0"
+          }
+        }
+      },
+      "HelixToolkit.Wpf/2.25.0": {
+        "runtime": {
+          "lib/net462/HelixToolkit.Wpf.dll": {
+            "assemblyVersion": "2.25.0.0",
+            "fileVersion": "2.25.0.0"
+          }
+        }
+      },
+      "MathNet.Numerics/6.0.0-beta1": {
+        "runtime": {
+          "lib/netstandard2.0/MathNet.Numerics.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.0.0"
+          }
+        }
+      },
+      "MathNet.Numerics.FSharp/6.0.0-beta1": {
+        "dependencies": {
+          "FSharp.Core": "8.0.100",
+          "MathNet.Numerics": "6.0.0-beta1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/MathNet.Numerics.FSharp.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.0.0"
+          }
+        }
+      },
+      "MathNet.Symbolics/0.25.0": {
+        "dependencies": {
+          "FParsec": "2.0.0-beta2",
+          "FSharp.Core": "8.0.100",
+          "MathNet.Numerics": "6.0.0-beta1",
+          "MathNet.Numerics.FSharp": "6.0.0-beta1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/MathNet.Symbolics.dll": {
+            "assemblyVersion": "0.25.0.0",
+            "fileVersion": "0.25.0.0"
+          }
+        }
+      },
+      "Microsoft.Extensions.Logging.Abstractions/6.0.0": {
+        "dependencies": {
+          "System.Buffers": "4.5.1",
+          "System.Memory": "4.5.4"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.21.52210"
+          }
+        }
+      },
+      "OxyPlot.Core/2.1.2": {
+        "runtime": {
+          "lib/netstandard2.0/OxyPlot.dll": {
+            "assemblyVersion": "2.1.2.0",
+            "fileVersion": "2.1.2.0"
+          }
+        }
+      },
+      "OxyPlot.Wpf/2.1.2": {
+        "dependencies": {
+          "OxyPlot.Core": "2.1.2",
+          "OxyPlot.Wpf.Shared": "2.1.2"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/OxyPlot.Wpf.dll": {
+            "assemblyVersion": "2.1.2.0",
+            "fileVersion": "2.1.2.0"
+          }
+        }
+      },
+      "OxyPlot.Wpf.Shared/2.1.2": {
+        "dependencies": {
+          "OxyPlot.Core": "2.1.2"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/OxyPlot.Wpf.Shared.dll": {
+            "assemblyVersion": "2.1.2.0",
+            "fileVersion": "2.1.2.0"
+          }
+        }
+      },
+      "System.Buffers/4.5.1": {},
+      "System.Memory/4.5.4": {}
+    }
+  },
+  "libraries": {
+    "Code/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FParsec/2.0.0-beta2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-bNoeKNYoLBg1oQttwAZFnhXJKxX6vtYBApbVHJlYa6SyGcuxwewJemwmO6eh7tD49vTzhAVjZo1SDGZ0o7RxxA==",
+      "path": "fparsec/2.0.0-beta2",
+      "hashPath": "fparsec.2.0.0-beta2.nupkg.sha512"
+    },
+    "FSharp.Core/8.0.100": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ZOVZ/o+jI3ormTZOa28Wh0tSRoyle1f7lKFcUN61sPiXI7eDZu8eSveFybgTeyIEyW0ujjp31cp7GOglDgsNEg==",
+      "path": "fsharp.core/8.0.100",
+      "hashPath": "fsharp.core.8.0.100.nupkg.sha512"
+    },
+    "HelixToolkit/2.25.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-UzF6KXadTdzrjTA8G00+V7RaQNpH+0729xByD6zhCgvDLvZ63CvH84/x2sjUO52bzHFphYixXtzf8G/OGVtz3w==",
+      "path": "helixtoolkit/2.25.0",
+      "hashPath": "helixtoolkit.2.25.0.nupkg.sha512"
+    },
+    "HelixToolkit.Wpf/2.25.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-eoMdrDgeSFo1JH15f2X/E5/nZUMAqvWzR8qcVzjLarCxR5qNleRqF+UHSzyCkvygeeDLCC/uharpD/gysFYuHw==",
+      "path": "helixtoolkit.wpf/2.25.0",
+      "hashPath": "helixtoolkit.wpf.2.25.0.nupkg.sha512"
+    },
+    "MathNet.Numerics/6.0.0-beta1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-GTwwNScDIL5+EvU6bN9+TP8bEbhcgR0hnVLZTriwSlXtzYU1h5EPpN58iojejeN/puC1+CVSoeuWNFhERkg71g==",
+      "path": "mathnet.numerics/6.0.0-beta1",
+      "hashPath": "mathnet.numerics.6.0.0-beta1.nupkg.sha512"
+    },
+    "MathNet.Numerics.FSharp/6.0.0-beta1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-BzRm+QAfmcgDWtcHGhmLCP6p4T1HIr8SefseOChcfAGmhKw1LtOH6bnHttHFfnpD72GAkPRc/jlkdHKFU+4Suw==",
+      "path": "mathnet.numerics.fsharp/6.0.0-beta1",
+      "hashPath": "mathnet.numerics.fsharp.6.0.0-beta1.nupkg.sha512"
+    },
+    "MathNet.Symbolics/0.25.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-sbeoi0wLoTY46GuOtZRSc03GhMFj/7fkgYvN0j2dDcFJVjAzGMnVWAByQOG5bgCESmd1u/c09Sbpm/N+QhL+gQ==",
+      "path": "mathnet.symbolics/0.25.0",
+      "hashPath": "mathnet.symbolics.0.25.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Logging.Abstractions/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/HggWBbTwy8TgebGSX5DBZ24ndhzi93sHUBDvP1IxbZD7FDokYzdAr6+vbWGjw2XAfR2EJ1sfKUotpjHnFWPxA==",
+      "path": "microsoft.extensions.logging.abstractions/6.0.0",
+      "hashPath": "microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512"
+    },
+    "OxyPlot.Core/2.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/BuPL1Wa7ZhpKA2DBe72md+S8PgIHF+UP/NsKfO9BiheXnbns1/tqS7s2MWIR1xFy5i+PWVC67KziGPY48mNgA==",
+      "path": "oxyplot.core/2.1.2",
+      "hashPath": "oxyplot.core.2.1.2.nupkg.sha512"
+    },
+    "OxyPlot.Wpf/2.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-udX9T1YC5BnnTZkVSNgJqvzXLaBcZDYG32YHWlDELk1UDWQeJi0Z2jBLoIiv4hcW16N4ptYO5cGC3e8m5/z0hw==",
+      "path": "oxyplot.wpf/2.1.2",
+      "hashPath": "oxyplot.wpf.2.1.2.nupkg.sha512"
+    },
+    "OxyPlot.Wpf.Shared/2.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6Cj7UET7AS5gVf77+avKG+PzaKQhTdqRYbyBTCPWW9JEbAsojpNdLICjVXO+5o/HP+DjshZJ6oCFw8eyRnHtCA==",
+      "path": "oxyplot.wpf.shared/2.1.2",
+      "hashPath": "oxyplot.wpf.shared.2.1.2.nupkg.sha512"
+    },
+    "System.Buffers/4.5.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Rw7ijyl1qqRS0YQD/WycNst8hUUMgrMH4FCn1nNm27M4VxchZ1js3fVjQaANHO5f3sN4isvP4a+Met9Y4YomAg==",
+      "path": "system.buffers/4.5.1",
+      "hashPath": "system.buffers.4.5.1.nupkg.sha512"
+    },
+    "System.Memory/4.5.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1MbJTHS1lZ4bS4FmsJjnuGJOu88ZzTT2rLvrhW7Ygic+pC0NWA+3hgAen0HRdsocuQXCkUTdFn9yHJJhsijDXw==",
+      "path": "system.memory/4.5.4",
+      "hashPath": "system.memory.4.5.4.nupkg.sha512"
+    }
+  }
+}
